@@ -126,5 +126,8 @@ This project is provided as-is for educational and personal use.
 - GPU acceleration is recommended for faster processing with TensorFlow
 
 ---
+example outputs
+<img width="997" height="447" alt="image" src="https://github.com/user-attachments/assets/cc51be23-c788-4117-813b-6e09dc60f4f2" />
+
 
 For more details, see the `CARTOON.ipynb` notebook.
