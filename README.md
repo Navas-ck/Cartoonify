@@ -14,19 +14,22 @@ A deep learning project that converts real images into cartoon-style artwork usi
 
 ```
 cartoonify image/
-├── CARTOON.ipynb              # Main Jupyter notebook
-├── bestcartoon.keras          # Pre-trained model
-├── cartoonmmm.keras           # Alternative model
-├── requirements.txt           # Python dependencies
-├── README.md                  # This file
+├── CARTOON.ipynb            
+├── bestcartoon.keras         
+├── cartoonmmm.keras          
+├── requirements.txt          
+├── README.md                  
 └── dataset/
     ├── train/
-    │   ├── cartoon/          # Training cartoon images
-    │   └── real/             # Training real images
+    │   ├── cartoon/          
+    │   └── real/            
     └── val/
-        ├── cartoon/          # Validation cartoon images
-        └── real/             # Validation real images
+        ├── cartoon/         
+        └── real/            
 ```
+## imp
+create model by run test.py
+gives a cartoonify model named "bestcartoon.keras"
 
 ## Installation
 
@@ -37,29 +40,6 @@ cartoonify image/
    pip install -r requirements.txt
    ```
 
-## Usage
-
-### Basic Image Cartoonification
-
-```python
-from PIL import Image
-import numpy as np
-
-# Load image
-img = Image.open("your_image.jpg").convert("RGB")
-img_array = np.array(img) / 255.0
-
-# Cartoonify
-cartoon = cartoon_simple_black_outline_flat_colors(
-    img_array, 
-    line_thickness=2, 
-    n_colors=8
-)
-
-# Display result
-plt.imshow(cartoon)
-plt.show()
-```
 
 ### Parameters
 
@@ -128,6 +108,15 @@ This project is provided as-is for educational and personal use.
 ---
 example outputs
 <img width="997" height="447" alt="image" src="https://github.com/user-attachments/assets/cc51be23-c788-4117-813b-6e09dc60f4f2" />
+<img width="993" height="355" alt="image" src="https://github.com/user-attachments/assets/cbe924d2-9cc2-4178-8188-f0b315a971c5" />
+<img width="995" height="350" alt="image" src="https://github.com/user-attachments/assets/75b47c84-557b-40e8-8993-ff8472266f1e" />
+<img width="995" height="571" alt="image" src="https://github.com/user-attachments/assets/50b3b763-b02a-4e60-bdfc-96d82b73db3b" />
+
+
+
+data set made myself by converting real image to catroon image using gemini
+link of dataset is below
+https://drive.google.com/file/d/1lGR48ZhNL-td6qEDbjBDaU6BThpMk0sj/view?usp=drive_link
 
 
 For more details, see the `CARTOON.ipynb` notebook.
